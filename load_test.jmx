@@ -15,7 +15,7 @@
           </elementProp>
           <elementProp name="MIRACLE_UI_IP" elementType="Argument">
             <stringProp name="Argument.name">MIRACLE_UI_IP</stringProp>
-            <stringProp name="Argument.value">172.16.111.31</stringProp>
+            <stringProp name="Argument.value">10.12.21.11</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="MIRACL_UI_PORT" elementType="Argument">
@@ -25,7 +25,7 @@
           </elementProp>
           <elementProp name="MIRACLE_API_IP" elementType="Argument">
             <stringProp name="Argument.name">MIRACLE_API_IP</stringProp>
-            <stringProp name="Argument.value">172.16.111.31</stringProp>
+            <stringProp name="Argument.value">10.12.21.11</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="MIRACLE_API_PORT" elementType="Argument">
