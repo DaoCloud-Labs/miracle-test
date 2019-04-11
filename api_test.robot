@@ -3,8 +3,8 @@ Documentation       Miracle Service API Testing
 Library             keywords/TestAPI.py
 
 *** Variables ***
-${前段地址}         http://172.16.111.31:31080
-${后端地址}         http://172.16.111.31:31880
+${前段地址}         http://10.12.21.11:31080
+${后端地址}         http://10.12.21.11:31880
 
 *** Test Cases ***
 TestCase-001 Health Check
