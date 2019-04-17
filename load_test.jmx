@@ -13,24 +13,24 @@
             <stringProp name="Argument.value">http</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="MIRACLE_UI_IP" elementType="Argument">
-            <stringProp name="Argument.name">MIRACLE_UI_IP</stringProp>
-            <stringProp name="Argument.value">10.12.21.11</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="MIRACL_UI_PORT" elementType="Argument">
-            <stringProp name="Argument.name">MIRACL_UI_PORT</stringProp>
-            <stringProp name="Argument.value">31080</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
           <elementProp name="MIRACLE_API_IP" elementType="Argument">
             <stringProp name="Argument.name">MIRACLE_API_IP</stringProp>
-            <stringProp name="Argument.value">10.12.21.11</stringProp>
+            <stringProp name="Argument.value">192.168.0.238</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="MIRACLE_API_PORT" elementType="Argument">
             <stringProp name="Argument.name">MIRACLE_API_PORT</stringProp>
-            <stringProp name="Argument.value">31880</stringProp>
+            <stringProp name="Argument.value">32653</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="MIRACLE_SERVICE_IP" elementType="Argument">
+            <stringProp name="Argument.name">MIRACLE_SERVICE_IP</stringProp>
+            <stringProp name="Argument.value">192.168.0.238</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="MIRACLE_SERVICE_PORT" elementType="Argument">
+            <stringProp name="Argument.name">MIRACLE_SERVICE_PORT</stringProp>
+            <stringProp name="Argument.value">31585</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -55,8 +55,8 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${MIRACLE_API_IP}</stringProp>
-          <stringProp name="HTTPSampler.port">${MIRACLE_API_PORT}</stringProp>
+          <stringProp name="HTTPSampler.domain">${MIRACLE_SERVICE_IP}</stringProp>
+          <stringProp name="HTTPSampler.port">${MIRACLE_SERVICE_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${PROTOCOL}</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">health</stringProp>
