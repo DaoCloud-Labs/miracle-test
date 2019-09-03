@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import requests
@@ -41,8 +41,5 @@ class TestAPI(object):
 
 
 if __name__ == '__main__':
-    api = TestAPI()
-    t_url = 'http://172.16.111.31:31880'
-    api.init_test_env(url=t_url)
-    api.load_test_data(status_code='404', response_content='Not Found')
-    api.request_validation(method='GET', path='/404')
+    print('This is Keywords script for Miracle demo')
+
