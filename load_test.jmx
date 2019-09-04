@@ -13,13 +13,13 @@
             <stringProp name="Argument.value">http</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="MIRACLE_API_IP" elementType="Argument">
-            <stringProp name="Argument.name">MIRACLE_API_IP</stringProp>
+          <elementProp name="MIRACLE_UI_IP" elementType="Argument">
+            <stringProp name="Argument.name">MIRACLE_UI_IP</stringProp>
             <stringProp name="Argument.value">192.168.0.238</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="MIRACLE_API_PORT" elementType="Argument">
-            <stringProp name="Argument.name">MIRACLE_API_PORT</stringProp>
+          <elementProp name="MIRACLE_UI_PORT" elementType="Argument">
+            <stringProp name="Argument.name">MIRACLE_UI_PORT</stringProp>
             <stringProp name="Argument.value">32653</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
