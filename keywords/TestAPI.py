@@ -18,8 +18,8 @@ class TestAPI(object):
     @staticmethod
     def setup():
         rc = False
-        for i in range(1, 31):
-            sleep(1)
+        for i in range(1, 60):
+            sleep(10)
             print(u'检查 Miracle UI 是否启动: 第 %s 次' % i)
             try:
                 if requests.get(os.getenv('UI_URL')).status_code == 200:
@@ -30,8 +30,8 @@ class TestAPI(object):
                 print(e)
         assert rc is True, u'%s 尚不可访问' % os.getenv('UI_URL')
         rc = False
-        for i in range(30):
-            sleep(1)
+        for i in range(60):
+            sleep(10)
             print(u'检查 Miracle Service 是否启动: 第 %s 次' % i)
             try:
                 if requests.get(os.getenv('SERVICE_URL')).status_code == 404:
