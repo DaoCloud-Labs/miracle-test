@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation       Miracle Service API Testing
 Library             keywords/TestAPI.py
+Suite Setup         Setup
 
 *** Variables ***
 ${前段地址}         ${UI_URL}
