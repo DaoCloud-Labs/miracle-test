@@ -21,19 +21,25 @@ class TestAPI(object):
         for i in range(1, 31):
             sleep(1)
             print(u'检查 Miracle UI 是否启动: 第 %s 次' % i)
-            if requests.get(os.getenv('UI_URL')).status_code == 200:
-                print(u'已启动')
-                rc = True
-                break
+            try:
+                if requests.get(os.getenv('UI_URL')).status_code == 200:
+                    print(u'已启动')
+                    rc = True
+                    break
+            except Exception as e:
+                print(e)
         assert rc is True, u'%s 尚不可访问' % os.getenv('UI_URL')
         rc = False
         for i in range(30):
             sleep(1)
             print(u'检查 Miracle Service 是否启动: 第 %s 次' % i)
-            if requests.get(os.getenv('SERVICE_URL')).status_code == 404:
-                print(u'已启动')
-                rc = True
-                break
+            try:
+                if requests.get(os.getenv('SERVICE_URL')).status_code == 404:
+                    print(u'已启动')
+                    rc = True
+                    break
+            except Exception as e:
+                print(e)
         assert rc is True, u'%s 尚不可访问' % os.getenv('SERVICE_URL')
 
     def init_test_env(self, url: str):
