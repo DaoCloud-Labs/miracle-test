@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import requests
+from time import sleep
+import os
 
 
 class TestAPI(object):
@@ -12,6 +14,21 @@ class TestAPI(object):
         self.expected_status_code = ''
         self.expected_response_content = ''
         self.test_data = {}
+
+    def setup(self):
+        rc = False
+        for i in range(30):
+            sleep(1)
+            if requests.get(os.getenv('UI_URL').status_code == 200:
+                rc = True
+                break
+        assert rc is True, u'UI尚不可访问'
+        rc = False
+        for i in range(30):
+            sleep(1)
+            if requests.get(os.getenv('SERVICE_URL').status_code == 404:
+               break
+        assert rc is True, u'尚不可访问'
 
     def init_test_env(self, url: str):
         self.url = url
